@@ -1,13 +1,5 @@
-# Sample Hardhat Project
+# Whitelist Dapp Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+## Contract Address deployed on Goerli Testnet
+0xEE2c315c92FE5F8Ceb8815dbCD75a89053b985C9
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
