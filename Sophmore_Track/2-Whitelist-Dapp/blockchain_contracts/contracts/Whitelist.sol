@@ -12,10 +12,13 @@ contract Whitelist {
   // Total number of addresses added to the whitelist
   uint public numAddressesWhitelisted;
 
-  constructor(uint _numAddressesWhitelisted) {
-    numAddressesWhitelisted = _numAddressesWhitelisted;
+  constructor(uint _maxWhitelistAddresses) {
+    maxWhitelistAddresses = _maxWhitelistAddresses;
   }
 
+  function getRemainingPlaces() public view returns (uint) {
+    return (maxWhitelistAddresses - numAddressesWhitelisted);
+  }
 
   function addAddressToWhitelist() public {
     require(!whitelistedAddresses[msg.sender] , "Sender has already been whitelisted");
@@ -23,7 +26,5 @@ contract Whitelist {
     whitelistedAddresses[msg.sender] = true;
     numAddressesWhitelisted++;
   }
-
-
 
 }
