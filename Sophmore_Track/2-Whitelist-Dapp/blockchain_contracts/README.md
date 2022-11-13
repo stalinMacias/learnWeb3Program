@@ -1,5 +1,4 @@
 # Whitelist Dapp Project
 
 ## Contract Address deployed on Goerli Testnet
-0xEE2c315c92FE5F8Ceb8815dbCD75a89053b985C9
-
+0x61FcA0154936A0BAa2c0D8A170CBd5f4072B2eC6
